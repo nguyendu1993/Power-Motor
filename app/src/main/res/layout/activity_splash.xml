@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCEF00"
+    tools:context=".Splash">
+
+    <ImageView
+        android:id="@+id/imvSplash"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:transitionName="logo_image"
+        android:layout_marginTop="190dp"
+        android:src="@drawable/logo_moto" />
+    
+    <TextView
+        android:id="@+id/tvSplash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imvSplash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-20dp"
+        android:fontFamily="@font/bangers"
+        android:transitionName="logo_text"
+        android:text="POWER MOTOR"
+        android:textAlignment="center"
+        android:textSize="60dp" />
+
+    <TextView
+        android:id="@+id/tvSplash2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSplash"
+        android:text="Quality makes a brand"
+        android:textAlignment="center" />
+
+</RelativeLayout>
